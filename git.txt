@@ -1,7 +1,7 @@
 git 초기화
   git init git 초기화
 
-git config : git configuration
+git config : git 환경설정
   윈도우버전 자동줄넘김
     git config --global core.autocrlf true (window)
     git config --global core.autocrlf input (mac)
@@ -13,3 +13,12 @@ git config : git configuration
   
 git 상태확인
   git status
+
+git 추가
+  git add .
+
+git 커밋하기
+  git commit -m '메시지'
+
+git 로그확인
+  git log
