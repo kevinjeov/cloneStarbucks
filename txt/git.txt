@@ -42,4 +42,6 @@ git 등록
     git checkout 브랜치명 - 브랜치명으로 깃 브랜치 변경
 
   브랜치에 깃 변경 저장
-  
+
+  이전으로 깃 돌리기
+    git reset --hard HEAD~1 - HEAD에서 1버전 아래로 리셋시킨다.
