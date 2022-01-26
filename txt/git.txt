@@ -1,8 +1,5 @@
-git 초기화
-  git init git 초기화
-
 git config : git 환경설정
-  윈도우버전 자동줄넘김
+  개행문자 설정
     git config --global core.autocrlf true (window)
     git config --global core.autocrlf input (mac)
   유저 이름, 이메일 설정
@@ -11,14 +8,25 @@ git config : git 환경설정
   config 상태 확인
     git config --global --list
   
+git 초기화
+  git init
+  
 git 상태확인
   git status
 
 git 추가
   git add .
+--> . 의 경우에는 전체를 의미, 개별적으로 만들 파일 지정도 할 수 있음
 
 git 커밋하기
   git commit -m '메시지'
 
 git 로그확인
   git log
+
+git 등록
+  git remote add origin git주소
+  origin 이라는 별칭으로 git주소의 원격 저장소로 연결
+
+푸쉬하기
+git push -u origin master
