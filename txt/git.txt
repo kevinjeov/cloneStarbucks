@@ -45,3 +45,6 @@ git 등록
 
   이전으로 깃 돌리기
     git reset --hard HEAD~1 - HEAD에서 1버전 아래로 리셋시킨다.
+
+  원상복귀시키기
+    git reset --hard ORIG_HEAD - 원래의 HEAD로 돌아가기
