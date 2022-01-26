@@ -29,4 +29,17 @@ git 등록
   origin 이라는 별칭으로 git주소의 원격 저장소로 연결
 
 푸쉬하기
-git push -u origin master
+  git push -u origin master
+
+브랜치 (Branch)
+  Master라는 큰 줄기를 두고 Branch라는 가지를 내서 그곳에서 git 을 커밋하고
+  이후에 Master 로 병합을 시킬 수 있도록 내어줌
+
+  브랜치 확인
+    git branch
+    git branch -a
+    git branch 브랜치명 - 브랜치명의 브랜치 생성
+    git checkout 브랜치명 - 브랜치명으로 깃 브랜치 변경
+
+  브랜치에 깃 변경 저장
+  
