@@ -29,4 +29,45 @@ git 등록
   origin 이라는 별칭으로 git주소의 원격 저장소로 연결
 
 푸쉬하기
-git push -u origin master
+  git push -u origin master
+
+브랜치 (Branch)
+  Master라는 큰 줄기를 두고 Branch라는 가지를 내서 그곳에서 git 을 커밋하고
+  이후에 Master 로 병합을 시킬 수 있도록 내어줌
+
+  브랜치 확인
+    git branch
+    git branch -a
+    git branch 브랜치명 - 브랜치명의 브랜치 생성
+    git checkout 브랜치명 - 브랜치명으로 깃 브랜치 변경
+
+  브랜치에 깃 변경 저장
+
+  이전으로 깃 돌리기
+    git reset --hard HEAD~1 - HEAD에서 1버전 아래로 리셋시킨다.
+
+  원상복귀시키기
+    git reset --hard ORIG_HEAD - 원래의 HEAD로 돌아가기
+
+  깃클론한 곳의 브랜치 확인
+    git branch -r
+
+  브랜치 가져오기
+    git branch -t origin/브랜치명
+  
+  브랜치 삭제시키기
+  git branch -d 브랜치명
+
+  브랜치 생성과 동시에 진입하기
+    git checkout -b 브랜치명
+
+git 충돌 시 사용할 방법
+  브랜치로 부터 깃 최신내용을 받아오기
+    git pull origin 브랜치명
+  1. 충돌이 발생한 경우 (커밋내역과 현재작업내역이 다를경우)
+    1. 현재 사항을 그대로 적용할 시
+    2. 수신 변경사항 수락
+    3. 두 변경 사항 모두 수락
+    4. 변경 사항 비교
+    5. 아예 다른 내용으로 변경 시
+      git add . 후 커밋하고 푸시시킴
