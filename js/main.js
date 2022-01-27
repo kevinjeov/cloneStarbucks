@@ -1,21 +1,3 @@
-// 검색 Input 돋보기 클릭 시 Focus 넣어주기
-
-const searchEl = document.querySelector('.search')
-const searchInputEl = searchEl.querySelector('input')
-
-searchEl.addEventListener('click', function () {
-  // Logic..
-  searchInputEl.focus();
-});
-searchInputEl.addEventListener('focus', function () {
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-});
-searchInputEl.addEventListener('blur', function () {
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-});
-
 // 배지 스크롤 시 사라지게 하기
 // lodash cdn 을 사용함 (구글에서 검색해볼 것)
 const badgeEl = document.querySelector('header .badges');
@@ -155,8 +137,3 @@ spyEls.forEach(function(spyEl){
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 })
-
-
-// 올해가 몇 년도인지 계산
- const thisYear = document.querySelector('.this-year')
- thisYear.textContent = new Date().getFullYear()
